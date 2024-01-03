@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.xingchen.springbootinit.mapper.TenementMapper">
+
+    <resultMap id="BaseResultMap" type="com.xingchen.springbootinit.model.entity.Tenement">
+            <id property="id" column="id" jdbcType="INTEGER"/>
+            <result property="name" column="name" jdbcType="VARCHAR"/>
+            <result property="gender" column="gender" jdbcType="VARCHAR"/>
+            <result property="age" column="age" jdbcType="VARCHAR"/>
+            <result property="ICN" column="ICN" jdbcType="BIGINT"/>
+            <result property="tel" column="tel" jdbcType="BIGINT"/>
+            <result property="houseHoldType" column="householdType" jdbcType="VARCHAR"/>
+            <result property="houseNumber" column="houseNumber" jdbcType="VARCHAR"/>
+            <result property="rent" column="rentTime" jdbcType="DATE"/>
+            <result property="expirationDate" column="expirationDate" jdbcType="DATE"/>
+            <result property="rent" column="rent" jdbcType="INTEGER"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,name,gender,
+        age,ICN,tel,
+        householdType,houseNumber,rentTime,
+        expirationDate,rent
+    </sql>
+</mapper>
